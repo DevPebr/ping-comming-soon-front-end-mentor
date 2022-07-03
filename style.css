@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+* body, * main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+* body .card, * main .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body .card .logo img, * main .card .logo img {
+  margin-top: 2rem;
+  padding-bottom: 1.3rem;
+}
+
+* body .card .logo p, * main .card .logo p {
+  padding-bottom: 1rem;
+}
+
+* body .card .logo .destaque, * main .card .logo .destaque {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #969696;
+}
+
+* body .card .logo .destaque span, * main .card .logo .destaque span {
+  color: #151f29;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+* body .card .logo .sub, * main .card .logo .sub {
+  color: #151f29;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+* body .card .email-send, * main .card .email-send {
+  text-align: left;
+}
+
+* body .card .email-send input, * main .card .email-send input {
+  padding: 12px 80px;
+  border-radius: 30px;
+  border: 1px solid #c2d3ff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+* body .card .email-send input:focus, * main .card .email-send input:focus {
+  border: 3px solid #4f7df3;
+  outline: 0;
+}
+
+* body .card .email-send input::-webkit-input-placeholder, * main .card .email-send input::-webkit-input-placeholder {
+  color: #c2d3ff;
+}
+
+* body .card .email-send input:-ms-input-placeholder, * main .card .email-send input:-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+* body .card .email-send input::-ms-input-placeholder, * main .card .email-send input::-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+* body .card .email-send input::placeholder, * main .card .email-send input::placeholder {
+  color: #c2d3ff;
+}
+
+* body .card .email-send button, * main .card .email-send button {
+  padding: 12px 60px;
+  border-radius: 30px;
+  color: white;
+  background-color: #4f7df3;
+  font-weight: 600;
+  border: none;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+* body .card .email-send button:hover, * main .card .email-send button:hover {
+  background-color: #c2d3ff;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+* body .card .email-send button:active, * main .card .email-send button:active {
+  padding: 8px 40px;
+}
+
+* body .card .email-send p, * main .card .email-send p {
+  margin-top: 10px;
+  color: #ff5263;
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-left: 20px;
+  display: none;
+}
+
+* body .card .contact img, * main .card .contact img {
+  width: 550px;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+* body .card .contact .social-medias, * main .card .contact .social-medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.2rem;
+  color: #4f7df3;
+  margin-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+* body .card .contact p, * main .card .contact p {
+  color: #969696;
+  font-weight: 300;
+}
+
+* body .focus-email, * main .focus-email {
+  outline: 0;
+  border: 3px solid #ff5263;
+}
+
+@media (max-width: 580px) {
+  * body .card .email-send, * main .card .email-send {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * body .card .email-send input, * main .card .email-send input {
+    width: 90%;
+  }
+  * body .card .email-send button, * main .card .email-send button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1rem;
+  }
+  * body .card .contact img, * main .card .contact img {
+    width: 99%;
+  }
+}
+
+@media (max-width: 391px) {
+  * body .card, * main .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  * body .card .logo, * main .card .logo {
+    margin-left: 3rem;
+  }
+  * body .card .email-send, * main .card .email-send {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 5.5rem;
+  }
+  * body .card .email-send input, * main .card .email-send input {
+    width: 20rem;
+    margin-right: 2rem;
+  }
+  * body .card .email-send button, * main .card .email-send button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    width: 50%;
+    height: 40%;
+    font-size: 0.7rem;
+  }
+  * body .card .contact .dash, * main .card .contact .dash {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    height: auto;
+    margin-left: 2.5rem;
+  }
+  * body .card .contact .copy, * main .card .contact .copy {
+    color: #151f29;
+    font-weight: 600;
+  }
+}
+/*# sourceMappingURL=style.css.map */

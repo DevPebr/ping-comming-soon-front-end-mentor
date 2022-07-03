@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+// Colors
+// Primary
+$blue:hsl(223, 87%, 63%);
+
+// Secondary
+$pale-blue:hsl(223, 100%, 88%);
+$light-red:hsl(354, 100%, 66%);
+
+// Neutral colors
+$gray:hsl(0, 0%, 59%);
+$very-dark-blue:hsl(209, 33%, 12%);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'Libre Franklin', sans-serif; // 300 600 700
+    
+
+    body, main {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        
+        .card {
+            display: flex;
+            flex-direction: column;
+            
+        .logo {
+            img {
+                margin-top: 2rem;
+                padding-bottom: 1.3rem;
+            } // img
+
+            p {
+                padding-bottom: 1rem;
+            }
+            .destaque {
+                font-size: 2rem;
+                font-weight: 300;
+                color: $gray;
+
+                span {
+                    color: $very-dark-blue;
+                    font-weight: 700;
+                    font-size: 2rem;
+                }
+            }
+
+            .sub {
+                color: $very-dark-blue;
+                font-weight: 300;
+                font-size: 18px;
+                
+            }
+        } // .logo
+
+        .email-send {
+            text-align: left;
+
+            input {
+                padding: 12px 80px;
+                border-radius: 30px;
+                border: 1px solid $pale-blue;
+                font-size: 1rem;
+                text-align: center;
+            
+                &:focus {
+                    border: 3px solid $blue;
+                    outline: 0;
+                }
+
+                &::placeholder {
+                    color: $pale-blue;
+                }
+            }
+            
+            button {
+                padding: 12px 60px;
+                border-radius: 30px;
+                color: white;
+                background-color: $blue;
+                font-weight: 600;
+                border: none;
+                font-size: 1rem;
+                margin-left: 10px;
+
+                &:hover {
+                    background-color: $pale-blue;
+                    transition: 0.8s;
+                    cursor: pointer;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+                }
+
+                &:active {
+                    padding: 8px 40px;
+                    
+                }
+            }
+
+            p {
+                margin-top: 10px;
+                color: $light-red;
+                font-weight: 300;
+                font-size: 0.9rem;
+                margin-left: 20px;
+                display: none;
+            }
+
+
+        } // email-send
+
+
+        .contact {
+            img {
+                width: 550px;
+                margin-top: 30px;
+                padding-bottom: 10px;
+            }
+
+            .social-medias {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1.2rem;
+                    color: $blue;
+                    margin-top: 1.2rem;
+                    padding-bottom: 1.2rem;
+            }
+
+            p {
+                color: $gray;
+                font-weight: 300;
+            }
+        } // contact
+        } // .card
+
+        .focus-email {
+            outline: 0;
+            border: 3px solid $light-red;
+        }
+
+        @media (max-width: 580px) {
+            .card {
+
+                .email-send {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                   
+
+
+                    input {
+                        width: 90%;
+                    }
+                    button {
+                        display: flex;
+                        width: 50%;
+                        justify-content: center;
+                        margin-top: 1rem;
+                    }
+                    
+                } // email-send
+
+                .contact {
+                    img {
+                        width: 99%;
+                    }
+                }
+            } // .card
+        } // @media
+
+    @media (max-width: 391px) {
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            
+
+            .logo {
+                margin-left: 3rem;
+            }
+            .email-send {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 5.5rem;
+                
+                input {
+                    width: 20rem;
+                    margin-right: 2rem;
+                }
+                
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 1rem;
+                    margin-right: 3rem;
+                    width: 50%;
+                    height: 40%;
+                    font-size: 0.7rem;
+                }
+                
+          
+            } // .email-send
+
+        .contact {
+            .dash {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                height: auto;
+                margin-left: 2.5rem;
+                
+                
+                
+            }
+
+            .copy {
+                color: $very-dark-blue;
+                font-weight: 600;
+            }
+        }
+
+        
+
+        
+    } // .card
+    } // @media
+    } // body, main
+} // *
